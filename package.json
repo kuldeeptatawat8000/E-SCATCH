@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start": "nodemon app",
+    "dev": "set DEBUG=development:* && nodemon app.js"
+
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,9 @@
   "type": "commonjs",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "config": "^4.1.1",
     "cookie-parser": "^1.4.7",
+    "debug": "^4.4.3",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",

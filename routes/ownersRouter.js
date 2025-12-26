@@ -1,8 +1,11 @@
-const express = require("express")
-const Router = express.Router();
+const express = require("express");
+const router = express.Router();
+const { ownerCreate } = require('../controllers/ownerControllers')
 
-Router.get("/", (req, res) => {
-    res.send("hyy")
-})
+router.post("/create", ownerCreate);
 
-module.exports = Router
+router.get("/", (req, res) => {
+  res.send("hyy");
+});
+
+module.exports = router;

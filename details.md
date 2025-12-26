@@ -18,3 +18,10 @@ discount
 bgcolor
 panelcolor
 textcolor
+
+======Sign up And login
+/shop->shop
+users/cart->cart
+admin->admin panel
+owner/products->all products
+owner/admin->show alll product and create products

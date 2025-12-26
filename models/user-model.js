@@ -6,13 +6,21 @@ const userSchema = new mongoose.Schema({
         minLength: 3,
         trim: true,
     },
-    email: String,
-    password: String,
+    email: {
+        type: String,
+        unique: true,
+        trim: true,
+        minLength: 6
+    },
+    password: {
+        type: String,
+        trim: true,
+        minLength: 4
+    },
     cart: {
         type: Array,
         default: [],
     },
-    isadmin: Boolean,
     orders: {
         type: Array,
         default: [],
