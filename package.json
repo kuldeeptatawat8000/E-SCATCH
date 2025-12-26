@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app",
     "dev": "set DEBUG=development:* && nodemon app.js"
-
   },
   "keywords": [],
   "author": "",
@@ -16,10 +15,13 @@
   "dependencies": {
     "bcrypt": "^6.0.0",
     "config": "^4.1.1",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.7",
     "debug": "^4.4.3",
     "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
     "express": "^5.2.1",
+    "express-session": "^1.18.2",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.0.0",
     "mongoose": "^9.0.2",

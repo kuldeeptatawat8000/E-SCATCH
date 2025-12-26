@@ -4,8 +4,8 @@ const { ownerCreate } = require('../controllers/ownerControllers')
 
 router.post("/create", ownerCreate);
 
-router.get("/", (req, res) => {
-  res.send("hyy");
+router.get("/admin", (req, res) => {
+  res.render('createProducts');
 });
 
 module.exports = router;
